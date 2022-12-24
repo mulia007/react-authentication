@@ -3,7 +3,7 @@ import axiosInstance from "../configs/axiosInstance";
 const APIAuth = {
   login: async ({ email, password }) => {
     try {
-      const respond = axiosInstance.post("/auth/login", { email, password });
+      const respond = await axiosInstance.post("/auth/login", { email, password });
       return respond.data;
     } catch (error) {
       throw new Error(error);

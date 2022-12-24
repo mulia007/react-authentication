@@ -9,12 +9,12 @@ import SignInPage from "../pages/SignInPage";
 const SetupRouter = () => {
   return (
     <Routes>
-      <Route path="/addcar" element={<AddCarPage />} />
       <Route path="/" element={<DashboardPage />} />
+      <Route path="/addcar" element={<AddCarPage />} />      
       <Route path="/editcar" element={<EditCarPage />} />
       <Route path="/listcar" element={<ListCarsPage />} />
-      <Route path="*" element={<NotFoundPage />} />
       <Route path="/signin" element={<SignInPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };
