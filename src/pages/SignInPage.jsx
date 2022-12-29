@@ -16,7 +16,7 @@ const SignInPage = () => {
     <div>
       <h1>SignInPage</h1>
       <form onSubmit={handleSubmit}>
-        <input type="email" name="email" id="emai" placeholder="email" />
+        <input type="email" name="email anda" id="emai" placeholder="email" />
         <input type="password" name="password" id="password" placeholder="password" />
         <button type="submit">Login</button>
       </form>
